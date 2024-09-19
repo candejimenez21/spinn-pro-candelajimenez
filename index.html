@@ -15,6 +15,9 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -42,7 +45,7 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center" style="height: 50px;">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
@@ -51,8 +54,8 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Características<br></a></li>
-          <li><a href="#about">Especificaciones</a></li>
+          <li><a href="#hero" class="active">Especificaciones<br></a></li>
+          <li><a href="#about">Características</a></li>
           <li><a href="#services">Accesorios</a></li>
           <li><a href="#portfolio">Recetas</a></li>
           <li><a href="#team">FAQs</a></li>
@@ -72,14 +75,14 @@
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up">Una máquina de café con superpoderes</h1>
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column">
+            <h1 data-aos="fade-up">Una máquina <br> de café con <br> superpoderes</h1>
             <div class="d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-delay="200">
               <a href="#about" class="btn-get-started">Saber más <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <img src="assets/img/cafetra portada.png" class="img-fluid" alt="">
+            <img src="assets/img/cafetra portada.png" alt="" style="width: 900px">
           </div>
         </div>
       </div>
@@ -93,45 +96,38 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-12">
             <div class="stats-item d-flex align-items-center w-100 h-100">
-              <img src="assets/img/weight_24dp_A07FCE_FILL0_wght400_GRAD0_opsz24.png" alt="">
+              <img src="assets/img/eco.png" alt="" style="padding-right: 20px;">
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="28" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Gramos de café</p>
+                <h3>Sostenible</h3>
+                <p>Reduce el deserdicio de residuos</p>
+              </div>
+            </div>
+            
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-4 col-md-12">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <img src="assets/img/automation.png" alt="" style="padding-right: 20px;"> 
+              <div>
+                <h3>Automatizada</h3>
+                <p>Funciones automáticas para <br> un uso sencillo</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-12">
             <div class="stats-item d-flex align-items-center w-100 h-100">
-              <img src="assets/img/water_drop_24dp_A07FCE_FILL0_wght400_GRAD0_opsz24.png" alt=""> 
+              <img src="assets/img/language.png" alt="" style="padding-right: 20px;">
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Mililitros de agua</p>
+                <h3>Inteligente</h3>
+                <p>Se conecta a aplicaciones móviles <br> para un control de forma remota</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <img src="assets/img/takeout_dining_24dp_A07FCE_FILL0_wght400_GRAD0_opsz24.png" alt="">
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Tamaño de porción</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <img src="assets/img/scale_24dp_A07FCE_FILL0_wght400_GRAD0_opsz24.png" alt="">
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Kilos de peso</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+          
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -140,13 +136,13 @@
         <div class="row gx-0">
 
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/centrifugacion.png" class="img-fluid" alt="">
+            <img src="assets/img/centrifugacion.png" style="width: 90%;" alt="">
           </div>
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
             <div class="content">
               <h3>TECNOLOGÍA</h3>
-              <h2>Centrifugación</h2>
+              <h2>Extracción perfecta</h2>
               <p>
                 Este sistema permite extraer el café de manera uniforme para lograr un café de calidad.
               </p>
@@ -163,10 +159,10 @@
             <div class="row gx-0">
               <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
                 <div class="content">
-                  <h3>CONECTIVIDAD</h3>
-                  <h2>Aplicación</h2>
+                  <h3>versátil</h3>
+                  <h2>Innovación en cada taza</h2>
                   <p>
-                    La aplicación de Spinn permite preparar varios tipos de café al instante de forma remota, notificando cuando está listo.
+                    Spinn Pro prepara espressos, cafés filtrados, bebidas frías y más, todo con precisión y consistencia.
                   </p>
                   <div class="text-center text-lg-start">
                     </a>
@@ -174,35 +170,13 @@
                 </div>
           </div>
               <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/cafetera celu.png" class="img-fluid" alt="">
+                <img src="assets/img/violeta.png" style="width: 90%;">
               </div>
     
 
    
 
-    <!-- About Section -->
-      <section id="about" class="about section">
-
-        <div class="container" data-aos="fade-up">
-          <div class="row gx-0">
-  
-            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/violeta.png" class="img-fluid" alt="">
-            </div>
-  
-            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-              <div class="content">
-                <h3>VERSÁTIL</h3>
-                <h2>Elaboración</h2>
-                <p>
-                  Spinn Pro prepara espressos, cafés filtrados, bebidas frías y más, todo con precisión y consistencia.
-                </p>
-                <div class="text-center text-lg-start">
-                  </a>
-                </div>
-              </div>
-        </div>
-
+    
       
 
     <!-- Values Section -->
@@ -210,43 +184,71 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Nuestros valores</h2>
-        <p>Características principales<br></p>
+        <h2>Café en un solo click<br></h2>
+        <p>La aplicación de Spinn permite preparar varios tipos de café al instante de forma remota, notificando cuando está listo.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row justify-content-center gy-4">
+          <img src="assets/img/celulares.png" alt="" style="width: 80%;">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card">
-              <img src="assets/img/eco.png" class="img-fluid" alt="">
-              <h3>Sostenible</h3>
-              <p>Reduce el desperdicio de residuos plásticos</p>
-            </div>
+          
           </div><!-- End Card Item -->
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card">
-              <img src="assets/img/automation.png" class="img-fluid" alt="">
-              <h3>Automatizada</h3>
-              <p>Funciones automáticas para un uso sencillo</p>
+          <!-- Alt Features Section -->
+    <section id="alt-features" class="alt-features section"> 
+
+      <div class="container">
+        
+
+        
+
+          <div class="col-xl-12 d-flex justify-content-center align-items-center order-2 order-xl-1 w-100" data-aos="fade-up" data-aos-delay="200">
+            
+
+            <div class="row align-self-center gy-5" style="width: 70%;">
+              
+              
+
+              <div class="col-md-6 icon-box"> 
+                <img src="assets/img/arrow_upload_progress.png" style="width: 56px;">
+                <div>
+                  
+                  <h4>Actualizaciones automáticas</h4> 
+                  
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6 icon-box">
+                <img src="assets/img/instant_mix.png" style="width: 56px;">
+                <div>
+                  <h4>Control desde tu celular</h4>
+                  
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6 icon-box">
+                <img src="assets/img/graphic_eq.png" style="width: 56px;">
+                <div>
+                  <h4>Comando de voz</h4>
+                </div>
+              </div><!-- End Feature Item -->
+
+              <div class="col-md-6 icon-box">
+                <img src="assets/img/autoplay.png" style="width: 56px;">
+                <div>
+                  <h4>Pedidos automáticos</h4>
+                  
+                </div>
+              </div><!-- End Feature Item -->
+
+             
             </div>
-          </div><!-- End Card Item -->
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
-              <img src="assets/img/language.png" class="img-fluid" alt="">
-              <h3>Inteligente</h3>
-              <p>Se conecta a aplicaciones móviles para un control de forma remota</p>
-            </div>
-          </div><!-- End Card Item -->
+          </div>
 
-        </div>
-
-      </div>
-
-    </section><!-- /Values Section -->
+          
 
    
 
@@ -256,151 +258,179 @@
 
     </section><!-- /Stats Section -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
+     <!-- Features Section -->
+  <section id="features" class="features section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>Our Advacedd Features<br></p>
-      </div><!-- End Section Title -->
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Detalles que marcan la diferencia</h2>
+      <p>Especificaciones<br></p>
+    </div><!-- End Section Title -->
 
-      <div class="container">
+    <div class="container">
 
-        <div class="row gy-5">
+      <div class="row gy-5">
 
-          <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/features.png" class="img-fluid" alt="">
+        <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
+          <img src="assets/img/especificaciones8.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-xl-6 d-flex">
+          <div class="row align-self-center gy-4">
+
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Contenedor de granos de 500 gr</h3>
+              </div>
+            </div><!-- End Feature Item -->
+
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Cuchillas de acero inoxidable</h3>
+              </div>
+            </div><!-- End Feature Item -->
+
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Sistema de molido de alta calidad</h3>
+              </div>
+            </div><!-- End Feature Item -->
+
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="500">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Contenedor de agua de 1 litro</h3>
+              </div>
+            </div><!-- End Feature Item -->
+
+            
           </div>
+        </div>
 
-          <div class="col-xl-6 d-flex">
-            <div class="row align-self-center gy-4">
+      </div>
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Sostenible</h3><br>Reduce el desperdicio de residuos plásticos<br>
+    </div>
+
+  </section><!-- /Features Section -->
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Potenciá tu experiencia</h2>
+      <p>Disfrutá de un café perfecto en cualquier lugar con una taza de viaje <br> o ampliá tus horizontes cafeteros con una jarra y un espumador de leche.<br></p>
+    </div><!-- End Section Title -->
+
+    
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 1,
+                "spaceBetween": 40
+              },
+              "1200": {
+                "slidesPerView": 3,
+                "spaceBetween": 1
+              }
+            }
+          }
+        </script>
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                
+              </div>
+              
+              
+              
+                <img src="assets/img/espumador10.png" class="testimonial-img" alt="">
+                <h3>Espumador de leche</h3>
+                
+              </div>
+            </div>
+            
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    
+                  </div>
                   
+                  
+                  
+                    <img src="assets/img/tolva16.png" class="testimonial-img" alt="" style="width: 300px;">
+                    <h3>Tolva chica</h3>
+                    
+                  </div>
                 </div>
-              </div><!-- End Feature Item -->
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="stars">
+                      
+                    </div>
+                    
+                    
+                    
+                      <img src="assets/img/jarra11.png" class="testimonial-img" alt="" style="width: 230px;">
+                      <h3>Jarra</h3>
+                      
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="stars">
+                        
+                      </div>
+                      
+                      
+                      
+                        <img src="assets/img/tolva grande18.png" class="testimonial-img" alt="" style="width:300px ;">
+                        <h3>Tolva grande</h3>
+                        
+                      </div>
+                    </div>
+                  
+          </div><!-- End testimonial item -->
+        
+          
+          
+          
 
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Facilis neque ipsa</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Volup amet volupt</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Rerum omnis sint</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Alias possimus</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Repellendus molli</h3>
-                </div>
-              </div><!-- End Feature Item -->
-
-            </div>
-          </div>
+          
 
         </div>
-
+        <div class="swiper-pagination"></div>
       </div>
 
-    </section><!-- /Features Section -->
+    </div>
 
-    <!-- Alt Features Section -->
-    <section id="alt-features" class="alt-features section">
+  </section><!-- /Testimonials Section -->
 
-      <div class="container">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-7 d-flex order-2 order-xl-1" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="row align-self-center gy-5">
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-award"></i>
-                <div>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-card-checklist"></i>
-                <div>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-dribbble"></i>
-                <div>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-filter-circle"></i>
-                <div>
-                  <h4>Beatae veritatis</h4>
-                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-lightning-charge"></i>
-                <div>
-                  <h4>Molestiae dolor</h4>
-                  <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-              <div class="col-md-6 icon-box">
-                <i class="bi bi-patch-check"></i>
-                <div>
-                  <h4>Explicabo consectetur</h4>
-                  <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-                </div>
-              </div><!-- End Feature Item -->
-
-            </div>
-
-          </div>
-
-          <div class="col-xl-5 d-flex align-items-center order-1 order-xl-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/alt-features.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Alt Features Section -->
-
+    
+     
+              
     <!-- Services Section -->
     <section id="services" class="services section">
 
@@ -824,132 +854,7 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>What they are saying about us<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
+    
 
     <!-- Team Section -->
     <section id="team" class="team section">
@@ -1021,24 +926,7 @@
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+          
 
         </div>
 
@@ -1412,6 +1300,18 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+ 
 </body>
 
 </html>
